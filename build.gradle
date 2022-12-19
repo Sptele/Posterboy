@@ -16,6 +16,12 @@ dependencies {
 
     // https://mvnrepository.com/artifact/io.github.cdimascio/java-dotenv
     implementation group: 'io.github.cdimascio', name: 'java-dotenv', version: '5.2.2'
+    // https://mvnrepository.com/artifact/jmagick/jmagick
+    compileOnly group: 'jmagick', name: 'jmagick', version: '6.6.9'
+
+    // https://mvnrepository.com/artifact/org.im4java/im4java
+    implementation group: 'org.im4java', name: 'im4java', version: '1.4.0'
+
 
 }
 

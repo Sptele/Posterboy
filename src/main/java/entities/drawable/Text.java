@@ -1,4 +1,4 @@
-package entities;
+package entities.drawable;
 
 import interfaces.Drawable;
 
@@ -16,5 +16,9 @@ public record Text(int xOffset, int yOffset, String text, Font font, Color color
 
 		g.setColor(initialColor);
 		g.setFont(initialFont);
+	}
+
+	public boolean isEmpty() {
+		return (text.equals(Integer.MIN_VALUE+""));
 	}
 }

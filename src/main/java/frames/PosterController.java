@@ -1,5 +1,6 @@
 package frames;
 
+import entities.PosterOptions;
 import interfaces.Controller;
 
 import java.awt.*;
@@ -11,6 +12,7 @@ public class PosterController extends Controller {
 
 		setContentPane(canvas);
 		this.canvas = canvas;
+
 	}
 
 	public PosterCanvas getCanvas() {

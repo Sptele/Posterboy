@@ -1,4 +1,4 @@
-package entities;
+package entities.drawable;
 
 import interfaces.Drawable;
 

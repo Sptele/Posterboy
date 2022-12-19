@@ -1,4 +1,4 @@
-package entities.graphics;
+package entities;
 
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
