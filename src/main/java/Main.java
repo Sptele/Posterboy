@@ -64,12 +64,13 @@ public class Main {
 		carSpecsPanel.add(modelYear);
 
 		/* 2nd Panel, options/configuration for the poster */
-		JPanel posterOptionsPanel = new JPanel(new GridLayout(5, 1)); // 3 elements
+		JPanel posterOptionsPanel = new JPanel(new GridLayout(6, 1)); // 3 elements
 		posterOptionsPanel.setBorder(new EmptyBorder(5, 5, 5, 5)); // Padding
 
 		// Title + Fields
 		Title posterOptions = new Title("Poster Configuration");
 		ListField angle = new ListField("Angles", "The angle the car is shot from, in relation to where the CAMERA would be at the angle specified", false, Arrays.stream(Angles.NAMES).map(s -> s.replaceAll("_", " ")).toArray(String[]::new));
+		FileField logoFile = new FileField("Custom Logo", "If a custom logo image is desired. To use the default logo, don't fill this out", false);
 		angle.getInputField().setSelectedItem("DEFAULT"); // Set the default on the List to the default option
 		ToggleField logo = new ToggleField("Logo", "Enable or disable showing the logo. This is primarily used if the final result of the logo is bad.",
 				false, "Shown", "Hidden", true);
@@ -80,6 +81,7 @@ public class Main {
 		posterOptionsPanel.add(posterOptions);
 		posterOptionsPanel.add(angle);
 		posterOptionsPanel.add(logo);
+		posterOptionsPanel.add(logoFile);
 		posterOptionsPanel.add(bkgrndColor);
 		posterOptionsPanel.add(accentBoxColor);
 
@@ -148,9 +150,7 @@ public class Main {
 		buttonPanel.add(submit);
 		buttonPanel.add(download);
 
-
 		// Add Panels to the main frame
-
 		co.add(carSpecsPanel);
 		co.add(posterOptionsPanel);
 		co.add(buttonPanel);

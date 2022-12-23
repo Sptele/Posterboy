@@ -64,9 +64,8 @@ public class PosterCanvas extends JPanel {
 			Map<?, ?> desktopHints =
 					(Map<?, ?>) Toolkit.getDefaultToolkit().getDesktopProperty("awt.font.desktophints");
 
-			if (desktopHints != null) {
+			if (desktopHints != null)
 				g.setRenderingHints(desktopHints);
-			}
 
 			CarImage image = new CarImage(
 					0, 250, 100,
