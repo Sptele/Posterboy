@@ -11,6 +11,8 @@ public class ListField extends InputField<JComboBox<String>, String> {
 
 	@Override
 	public String getInputFieldValue() {
+		if (inputField.getSelectedItem() == null) return "DEFAULT";
+
 		return inputField.getSelectedItem().toString();
 	}
 }

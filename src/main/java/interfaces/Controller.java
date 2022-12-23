@@ -17,11 +17,12 @@ public abstract class Controller extends JFrame {
 		super(title);
 		setLayout(layout);
 		try {
-			setIconImage(ImageIO.read(new File(System.getProperty("user.dir") + "\\icon.png")));
+			setIconImage(ImageIO.read(new File(System.getProperty("user.dir") + "\\assets\\icon.png")));
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
 
+		setLocationRelativeTo(null);
 		setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 		setPreferredSize(new Dimension(SCREEN_WIDTH, SCREEN_HEIGHT));
 	}

@@ -7,8 +7,8 @@ import java.awt.*;
 
 public record AccentBox(int xOffset, int yOffset, int width, int height, Color color) implements Drawable {
 
-	public AccentBox(int carHeight) {
-		this(0, 200, Controller.SCREEN_WIDTH, carHeight + 50, Color.BLACK);
+	public AccentBox(Color color, int carHeight) {
+		this(0, 200, Controller.SCREEN_WIDTH, carHeight + 50, color);
 	}
 
 	@Override

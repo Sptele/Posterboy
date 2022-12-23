@@ -10,6 +10,8 @@ public class OptionsController extends Controller {
 
 	public OptionsController(String title) {
 		super(title, new FlowLayout());
+
+		setPreferredSize(Toolkit.getDefaultToolkit().getScreenSize());
 	}
 
 	public OptionsController(String title, LayoutManager layout) {
@@ -18,6 +20,8 @@ public class OptionsController extends Controller {
 
 	public OptionsController(String title, LayoutManager layout, OptionsConsumer consumer) {
 		super(title, layout);
+
+		setPreferredSize(new Dimension(1920, 1200));
 
 		consumer.createInterface(this);
 	}

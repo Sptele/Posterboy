@@ -15,6 +15,8 @@ public record DrawableController(ArrayList<Drawable> drawables) {
 		drawables.add(drawable);
 	}
 
+	public void append(Drawable drawable, int index) { drawables.add(index, drawable); }
+
 	public void insertAtPosition(int index, Drawable drawable) {
 		drawables.add(index, drawable);
 	}

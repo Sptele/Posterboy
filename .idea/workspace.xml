@@ -5,31 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44af110c-6177-4165-8aad-ffd918c364da" name="Changes" comment="Complete Restruct, Add GUI">
-      <change afterPath="$PROJECT_DIR$/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/PosterOptions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/drawable/Logo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/drawable/TextOptional.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/fields/ListField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/fields/TextField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/fields/ToggleField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/interfaces/InputField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/template.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/fields/ColorField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/fields/IntegerField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/fixed-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CarBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/AccentBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/drawable/AccentBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/drawable/Background.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/CarImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/drawable/CarImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/DrawableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/drawable/DrawableController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Text.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/drawable/Text.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/graphics/ComboBox.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/graphics/Field.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/graphics/Title.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Title.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/PosterOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/PosterOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/drawable/AccentBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/drawable/AccentBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/drawable/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/drawable/Background.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/fields/ListField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/fields/ListField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/frames/OptionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frames/OptionsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/frames/PosterCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frames/PosterCanvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/frames/PosterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frames/PosterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/Drawable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/Drawable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/InputField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/InputField.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +101,7 @@
       <recent name="C:\Users\gauta\Projects\Posterboy\Posterboy" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gauta\Projects\Posterboy\Posterboy\assets" />
       <recent name="C:\Users\gauta\Projects\Posterboy\Posterboy" />
     </key>
   </component>

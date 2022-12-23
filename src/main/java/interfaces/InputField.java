@@ -37,6 +37,7 @@ public abstract class InputField<C extends JComponent, R> extends JComponent {
 		add(this.tip);
 
 		setBorder(this.border);
+		setToolTipText(tipText);
 	}
 
 	public C getInputField() {

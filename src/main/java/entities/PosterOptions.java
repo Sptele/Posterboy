@@ -1,3 +1,5 @@
 package entities;
 
-public record PosterOptions(boolean showLogo) {}
+import java.awt.*;
+
+public record PosterOptions(boolean showLogo, Color bkgrndColor, Color accentBoxColor) {}
