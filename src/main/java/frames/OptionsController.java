@@ -11,7 +11,7 @@ public class OptionsController extends Controller {
 	public OptionsController(String title) {
 		super(title, new FlowLayout());
 
-		setPreferredSize(Toolkit.getDefaultToolkit().getScreenSize());
+		setPreferredSize(null);
 	}
 
 	public OptionsController(String title, LayoutManager layout) {

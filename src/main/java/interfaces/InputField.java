@@ -1,5 +1,7 @@
 package interfaces;
 
+import fonts.FontController;
+
 import javax.swing.*;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
@@ -16,19 +18,20 @@ public abstract class InputField<C extends JComponent, R> extends JComponent {
 	public InputField(String text, String tipText, boolean required, C inputField) {
 		this.required = required;
 		this.inputField = inputField;
+		this.inputField.setFont(FontController.futura(Font.PLAIN, this.inputField.getFont().getSize()));
 
 		this.border = BorderFactory.createCompoundBorder(
-				BorderFactory.createEtchedBorder(Color.GRAY, Color.GRAY),
+				BorderFactory.createEmptyBorder(0, 0, 0, 0),
 				BorderFactory.createEmptyBorder(5, 5, 5, 5)
 		);
 
 		this.label = new JLabel(text + (required ? "*" : "") + ": ");
-		this.label.setFont(new Font("Futura", Font.PLAIN, 30));
+		this.label.setFont(FontController.futura(Font.PLAIN, 30));
 		this.label.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		this.tip = new JLabel((required ? "(REQUIRED) " : "") + tipText);
 		this.tip.setForeground(Color.GRAY);
-		this.tip.setFont(new Font("Futura", Font.ITALIC, 10));
+		this.tip.setFont(FontController.futura(Font.ITALIC, 10));
 
 		setLayout(new FlowLayout(FlowLayout.LEFT));
 

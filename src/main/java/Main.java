@@ -3,6 +3,7 @@ import entities.PosterOptions;
 import entities.Title;
 import entities.fields.*;
 import entities.fields.TextField;
+import fonts.FontController;
 import frames.OptionsController;
 import frames.PosterCanvas;
 import frames.PosterController;
@@ -21,8 +22,9 @@ import java.util.Arrays;
 import java.util.Calendar;
 
 public class Main {
-
 	public static void main(String[] args) {
+		FontController.setup();
+
 		OptionsController settings = new OptionsController("Car Settings");
 		settings.construct(Main::constructOptionsFrame);
 		settings.display();
@@ -36,11 +38,10 @@ public class Main {
 	 * @param co The main frame to build on
 	 */
 	public static void constructOptionsFrame(Controller co) {
-		co.setLayout(new GridLayout(3, 1)); // Grid Manager for simplicity, 3 rows (1 column)
+		co.setLayout(new GridBagLayout()); // Grid Manager for simplicity, 3 rows (1 column)
 
 		/* 1st Panel, car information for the poster */
 		JPanel carSpecsPanel = new JPanel(new GridLayout(7, 1)); // Same as the main frame, uses Grid manager. 7 rows
-		carSpecsPanel.setBorder(new EmptyBorder(5, 5, 5, 5)); // Add padding through EmptyBorder
 
 		// Title + Fields
 		Title carChooser = new Title("Car Specification");
@@ -64,12 +65,11 @@ public class Main {
 		carSpecsPanel.add(modelYear);
 
 		/* 2nd Panel, options/configuration for the poster */
-		JPanel posterOptionsPanel = new JPanel(new GridLayout(6, 1)); // 3 elements
-		posterOptionsPanel.setBorder(new EmptyBorder(5, 5, 5, 5)); // Padding
+		JPanel posterOptionsPanel = new JPanel(new GridLayout(7, 1)); // 3 elements
 
 		// Title + Fields
 		Title posterOptions = new Title("Poster Configuration");
-		ListField angle = new ListField("Angles", "The angle the car is shot from, in relation to where the CAMERA would be at the angle specified", false, Arrays.stream(Angles.NAMES).map(s -> s.replaceAll("_", " ")).toArray(String[]::new));
+		ListField angle = new ListField("Angles", "The angle the car is shot from, from the Camera's POV", false, Arrays.stream(Angles.NAMES).map(s -> s.replaceAll("_", " ")).toArray(String[]::new));
 		FileField logoFile = new FileField("Custom Logo", "If a custom logo image is desired. To use the default logo, don't fill this out", false);
 		angle.getInputField().setSelectedItem("DEFAULT"); // Set the default on the List to the default option
 		ToggleField logo = new ToggleField("Logo", "Enable or disable showing the logo. This is primarily used if the final result of the logo is bad.",
@@ -151,9 +151,29 @@ public class Main {
 		buttonPanel.add(download);
 
 		// Add Panels to the main frame
-		co.add(carSpecsPanel);
-		co.add(posterOptionsPanel);
-		co.add(buttonPanel);
+		GridBagConstraints c = new GridBagConstraints();
+		c.fill = GridBagConstraints.HORIZONTAL;
+		c.insets = new Insets(10, 10, 10, 10);
+
+		c.gridx = 0;
+		c.gridy = 0;
+
+		co.add(carSpecsPanel, c);
+
+		c.gridx = 1;
+		c.gridy = 0;
+
+		co.add(posterOptionsPanel, c);
+
+		c.gridx = 0;
+		c.gridy = 1;
+
+		co.add(submit, c);
+
+		c.gridx = 1;
+		c.gridy = 1;
+
+		co.add(download, c);
 	}
 
 	/**

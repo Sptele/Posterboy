@@ -5,12 +5,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44af110c-6177-4165-8aad-ffd918c364da" name="Changes" comment="Complete Restruct, Add GUI">
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/fields/FileField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp/fixed-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Futura Bold Italic font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Futura Bold font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Futura Book Italic font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Futura Book font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Futura Extra Black font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Futura Heavy Italic font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Futura Heavy font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Futura Light Italic font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Futura Light font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Futura Medium Italic font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Futura XBlk BT.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Futura-CondensedLight.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/futur.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/futura light bt.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/futura medium bt.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/futura medium condensed bt.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/tt0205m_.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/unicode.futurab.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/unicode.futurabb.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/ChangeLog.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/IMDisplay.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/ImageMagick.rdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/NOTICE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/compare.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/composite.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/configure.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/conjure.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/convert.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/dcraw.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/delegates.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/english.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/ffmpeg.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/identify.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/locale.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/log.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/magick.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/mime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/mogrify.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/montage.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/policy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/quantization-table.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/sRGB.icc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/stream.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/thresholds.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/type-ghostscript.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/image-engine/type.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fonts/FontController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Title.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/Title.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/frames/PosterCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/frames/PosterCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/InputField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/InputField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/fixed-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/logo.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,23 +82,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Posterboy" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Posterboy" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Posterboy" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="publishing" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -62,6 +98,9 @@
       </list>
     </option>
   </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="a518c4qh" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -73,21 +112,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/gauta/Projects/Posterboy/Posterboy&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.30510315&quot;,
-    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/gauta/Projects/Posterboy/Posterboy/src/main/java/forms/Options.form&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
+    "last_opened_file_path": "C:/Users/gauta/Projects/Posterboy/assets",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.splitter.proportion": "0.30510315",
+    "two.files.diff.last.used.file": "C:/Users/gauta/Projects/Posterboy/Posterboy/src/main/java/forms/Options.form"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gauta\Projects\Posterboy\assets" />
+      <recent name="C:\Users\gauta\Projects\Posterboy\assets\fonts" />
+      <recent name="C:\Users\gauta\Projects\Posterboy\src\main\java\fonts" />
       <recent name="C:\Users\gauta\Projects\Posterboy\Posterboy" />
     </key>
     <key name="MoveFile.RECENT_KEYS">

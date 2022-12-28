@@ -2,6 +2,7 @@ package frames;
 
 import entities.*;
 import entities.drawable.*;
+import fonts.FontController;
 import interfaces.Angles;
 import interfaces.Controller;
 
@@ -73,8 +74,8 @@ public class PosterCanvas extends JPanel {
 
 			AccentBox box = new AccentBox(options.accentBoxColor(), image.height());
 
-			Text brand = new Text(20, 180, car.make().toUpperCase(), new Font("Garamond", Font.ITALIC, 50), Color.BLACK);
-			Text name = new Text(20, 325, car.modelFamily().toUpperCase(), new Font("futura", Font.BOLD, 125), Color.WHITE);
+			Text brand = new Text(20, 180, car.make().toUpperCase(), FontController.garamond(Font.ITALIC, 50), Color.BLACK);
+			Text name = new Text(20, 325, car.modelFamily().toUpperCase(), FontController.futura(Font.PLAIN, 125), Color.WHITE);
 
 			Text[] variant = generateField("variant", car.modelRange(), true, true, box.height());
 			Text[] year = generateField("year", car.modelYear()+"", true, variant[1].isEmpty(), box.height());
@@ -110,8 +111,8 @@ public class PosterCanvas extends JPanel {
 
 		int xOffset = firstOffset ? Controller.SCREEN_WIDTH / 7 : Controller.SCREEN_WIDTH / 7 * 4;
 		int yOffset = secondOffset ? 75 : 75*3;
-		Text label = new Text(xOffset, 200 + boxHeight + yOffset, title.toUpperCase(), new Font("futura", Font.PLAIN, labelSize), Color.BLACK);
-		Text data = new Text(xOffset, 200 + boxHeight + yOffset + labelSize +5, value.toUpperCase(), new Font("futura", Font.BOLD, dataSize), Color.GRAY);
+		Text label = new Text(xOffset, 200 + boxHeight + yOffset, title.toUpperCase(), FontController.futura(Font.PLAIN, labelSize), Color.BLACK);
+		Text data = new Text(xOffset, 200 + boxHeight + yOffset + labelSize +5, value.toUpperCase(), FontController.futura(Font.BOLD, dataSize), Color.GRAY);
 
 		return new Text[]{label, data};
 	}
@@ -141,7 +142,7 @@ public class PosterCanvas extends JPanel {
 		ImageIO.write(img, "png", inp);
 
 		Runtime rt = Runtime.getRuntime();
-		rt.exec("magick " + inp.getAbsolutePath() + " -resize 75% -bordercolor white -border 1x1 -alpha set -channel RGBA " +
+		rt.exec("assets\\image-engine\\magick.exe " + inp.getAbsolutePath() + " -resize 75% -bordercolor white -border 1x1 -alpha set -channel RGBA " +
 				"-fuzz 20% -fill none -floodfill +0+0 white -shave 1x1 " + out.getAbsolutePath());
 
 		BufferedImage newImg = ImageIO.read(out);
