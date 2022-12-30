@@ -1,14 +1,15 @@
 package entities.fields;
 
+import entities.PosterButton;
 import interfaces.InputField;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class ColorField extends InputField<JButton, Color> {
+public class ColorField extends InputField<PosterButton, Color> {
 	private Color colorValue;
 	public ColorField(String text, String tipText, boolean required, Color initial) {
-		super(text, tipText, required, new JButton("Choose Color"));
+		super(text, tipText, required, new PosterButton("Choose Color", 15));
 
 		colorValue = initial;
 

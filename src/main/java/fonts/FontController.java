@@ -7,7 +7,6 @@ import java.io.IOException;
 public class FontController {
 	private static Font futura;
 	private static Font garamond;
-	public static final int SUPER_BOLD = 59;
 
 	public static void setup() {
 		try {

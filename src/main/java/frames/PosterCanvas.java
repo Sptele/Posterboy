@@ -75,7 +75,7 @@ public class PosterCanvas extends JPanel {
 			AccentBox box = new AccentBox(options.accentBoxColor(), image.height());
 
 			Text brand = new Text(20, 180, car.make().toUpperCase(), FontController.garamond(Font.ITALIC, 50), Color.BLACK);
-			Text name = new Text(20, 325, car.modelFamily().toUpperCase(), FontController.futura(Font.PLAIN, 125), Color.WHITE);
+			Text name = new Text(20, 325, car.modelFamily().toUpperCase(), FontController.futura(Font.BOLD, 125), Color.WHITE);
 
 			Text[] variant = generateField("variant", car.modelRange(), true, true, box.height());
 			Text[] year = generateField("year", car.modelYear()+"", true, variant[1].isEmpty(), box.height());

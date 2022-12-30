@@ -1,9 +1,11 @@
 import entities.Car;
 import entities.PosterOptions;
+import entities.PosterButton;
 import entities.Title;
 import entities.fields.*;
 import entities.fields.TextField;
 import fonts.FontController;
+import frames.AdvancedOptionsController;
 import frames.OptionsController;
 import frames.PosterCanvas;
 import frames.PosterController;
@@ -12,7 +14,6 @@ import interfaces.Controller;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
-import javax.swing.border.EmptyBorder;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -22,7 +23,18 @@ import java.util.Arrays;
 import java.util.Calendar;
 
 public class Main {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws UnsupportedLookAndFeelException, ClassNotFoundException, InstantiationException, IllegalAccessException {
+		try {
+			for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+				if (info.getName().equals("Nimbus")) {
+					UIManager.setLookAndFeel(info.getClassName());
+					break;
+				}
+			}
+		} catch (Exception e) {
+			// If Nimbus is not available, you can set the GUI to another look and feel.
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+		}
 		FontController.setup();
 
 		OptionsController settings = new OptionsController("Car Settings");
@@ -76,6 +88,13 @@ public class Main {
 				false, "Shown", "Hidden", true);
 		ColorField bkgrndColor = new ColorField("Background Color", "The color for the background", false, Color.decode("#ccccda"));
 		ColorField accentBoxColor = new ColorField("Box Color", "The color for the box that goes behind the car", false, Color.BLACK);
+		PosterButton advancedOptionsButton = new PosterButton("Advanced Options", 20);
+		advancedOptionsButton.addActionListener(e -> {
+			AdvancedOptionsController options = new AdvancedOptionsController("Advanced Options");
+			options.construct(aoc -> {
+
+			});
+		});
 
 		// Add them
 		posterOptionsPanel.add(posterOptions);
@@ -84,13 +103,14 @@ public class Main {
 		posterOptionsPanel.add(logoFile);
 		posterOptionsPanel.add(bkgrndColor);
 		posterOptionsPanel.add(accentBoxColor);
+		posterOptionsPanel.add(advancedOptionsButton);
 
 		/* 3rd Panel, buttons */
 		JPanel buttonPanel = new JPanel();
 		buttonPanel.setLayout(new GridLayout(2, 1)); // 2 buttons
 
 		// Display button, creates a window to show the poster
-		JButton submit = new JButton("Display Poster");
+		PosterButton submit = new PosterButton("Display Poster");
 		submit.addActionListener(e -> {
 			/* Generate the poster and simply show it */
 			main = generatePoster(co, make, modelFamily, modelRange, modelVariant, bodySize, modelYear, angle,
@@ -101,7 +121,7 @@ public class Main {
 		});
 
 		// Download button, pops up a dialog to download
-		JButton download = new JButton("Download");
+		PosterButton download = new PosterButton("Download");
 		download.addActionListener(e -> {
 			/* Generate the poster, prompt the user to download it to a location, and download */
 			main = generatePoster(co, make, modelFamily, modelRange, modelVariant, bodySize, modelYear, angle,
@@ -214,7 +234,4 @@ public class Main {
 
 		return null;
 	}
-
-
-
 }
